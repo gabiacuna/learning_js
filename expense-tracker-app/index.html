@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Expence Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Expence Tracker</h1>
+    </header>
+    <h2>Agrega un nuevo item:</h2>
+    <form>
+        <p>Nombre <input type="text" class='name-input' placeholder="Cual fue el gasto?" required></p>
+        <p>Fecha <input type="date" class="date-input" required> </p>
+        <p>Cantidad <input type="number" class="num-input" required></p>
+
+        <button class="input-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+
+    <div class="expences-disp">
+        <table id="exp-table">
+            <thead>
+                <tr>
+                    <th colspan="1">Nombre</th>
+                    <th colspan="1">Fecha</th>
+                    <th colspan="1">Gasto</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
