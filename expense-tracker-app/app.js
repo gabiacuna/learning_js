@@ -16,12 +16,19 @@ function addExpence(event) {
     const expDiv = document.createElement('div');
     expDiv.classList.add('exp');
 
-    // create tab element
+    // get tab from id
     const tableRef = document.getElementById('exp-table');
     
     const newExp = tableRef.insertRow(0);
     
     newExp.innerText = nameInput.value;
+
+    let newCell = newExp.insertCell(0);
+
+    const nameCell = nameInput.value;
+    newCell.appendChild(nameCell);
+    const dateCell = dateInput.value;
+    const numCell = numInput.value;
     
     // Agregar la fila a la tabla
     addRow('my-table');
