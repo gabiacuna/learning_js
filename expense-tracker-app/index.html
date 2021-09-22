@@ -15,9 +15,9 @@
     </header>
     <h2>Agrega un nuevo item:</h2>
     <form>
-        <p>Nombre <input type="text" class='name-input' placeholder="Cual fue el gasto?" required></p>
-        <p>Fecha <input type="date" class="date-input" required> </p>
-        <p>Cantidad <input type="number" class="num-input" required></p>
+        <p>Nombre <input type="text" class='name-input' id="in1" placeholder="Cual fue el gasto?" required></p>
+        <p>Fecha <input type="date" class="date-input" id="in2" required> </p>
+        <p>Cantidad <input type="number" class="num-input" id="in3" required></p>
 
         <button class="input-button" type="submit">
             <i class="fas fa-plus-square"></i>
@@ -26,7 +26,7 @@
     <h2>Tus Gastos:</h2>
     
     <div class="expences-disp">
-        <table id="exp-table">
+        <table id="exp-table" class="table1">
             <thead>
                 <tr>
                     <th colspan="1">Nombre</th>

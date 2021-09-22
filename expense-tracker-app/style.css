@@ -42,8 +42,10 @@ header, form{
 
 form input, form button{
     padding: 0.5rem;
+    margin: 1rem;
     font-size: 1.5rem;
     border: none;
+    align-content: center;
     background: rgba(255, 255, 255, 0.5);
 }
 
@@ -68,9 +70,9 @@ tfoot {
     color: #fff;
 }
 
-.expences-disp {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.table1{
+    table-layout: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
